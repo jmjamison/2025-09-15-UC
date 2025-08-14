@@ -407,6 +407,7 @@ of code below the Schedule `<h2>` header below with
 
 {% include custom-schedule.html %}
 {% if site.carpentry == "swc" %}
+{% endif %}
 
 {% comment %}
 Edit/replace the text above if you want to include a schedule table.
