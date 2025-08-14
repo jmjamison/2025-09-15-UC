@@ -9,7 +9,7 @@ country: "US"      # lowercase two-letter ISO country code such as "fr" (see htt
 language: "EN"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
 latitude: "36.778259"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-119.417931"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "September 15, 2025"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "September 15-25, 2025"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "8:30 am - 12:30 pm PST"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2025-09-15      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2025-09-25        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
@@ -90,6 +90,10 @@ displayed if the 'eventbrite' field in the header is not set.
     });
 </script>
 {% endif %}
+
+<h2 id="registration">Register</h2>
+
+<strong><a href="https://ucsb.zoom.us/meeting/register/KjlgUajXRUK9JEBpmXzBcw">https://ucsb.zoom.us/meeting/register/KjlgUajXRUK9JEBpmXzBcw</a></strong> 
 
 
 <h2 id="general">General Information</h2>
