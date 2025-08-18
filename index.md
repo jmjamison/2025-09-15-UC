@@ -93,7 +93,7 @@ displayed if the 'eventbrite' field in the header is not set.
 
 <h2 id="registration">Register</h2>
 
-<strong><a href="https://ucsb.zoom.us/meeting/register/KjlgUajXRUK9JEBpmXzBcw">https://ucsb.zoom.us/meeting/register/KjlgUajXRUK9JEBpmXzBcw</a></strong> 
+<strong><a href="https://ucsb.zoom.us/meeting/register/KjlgUajXRUK9JEBpmXzBcw">Register here to receive a Zoom link.</a></strong> 
 
 
 <h2 id="general">General Information</h2>
