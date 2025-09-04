@@ -14,81 +14,10 @@
 
     <div class="tab-content">
       <article role="tabpanel" class="tab-pane outer-tab active" id="shell-windows">
-        <p>Two options are available for setting up your device so that you’re ready to learn in our workshops with Microsoft Windows.</p>
-
-        <p>The first is Windows Subsystem for Linux v2 (“WSL 2”), and the second is Git for Windows (often referred to as “Git Bash”).</p>
-
-        <p>Please follow the instructions below, depending on <a href="#shell-windows-check">which version of Windows you are using</a>. If unsure, use the asterisk marked version <strong>*</strong>.</p>
-
-        <div class="alert alert-warning">
-            <strong>To install WSL 2, you will need Administrator (“admin”) privileges on your laptop/PC.</strong><br>
-            If you have a device provided by an institution that does not give you admin rights, please either request that they:
-            <ul>
-                <li>Give you admin rights (temporarily or otherwise) to install WSL 2 yourself OR</li>
-                <li>Install WSL 2 for you</li>
-            </ul>
-        </div>
 
         <p>
-            <strong>If you experience any issues, please install Git for Windows using the <a class="os-switch" data-software="gitbash" href="#shell-install-gitbash">instructions below</a>.</strong>
+            <strong>Please install Git for Windows using the <a class="os-switch" data-software="gitbash" href="#shell-install-gitbash">instructions below</a>.</strong>
         </p>
-
-        <table>
-            <tr>
-                <th>Windows Version</th>
-                <th>What to Install</th>
-            </tr>
-            <tr>
-                <td>Windows 8.1 or earlier</td>
-                <td><a class="os-switch" data-software="gitbash" href="#shell-install-gitbash">Install Git for Windows</a></td>
-            </tr>
-            <tr>
-                <td>Windows 10 (#1902 and below)</td>
-                <td><a class="os-switch" data-software="gitbash" href="#shell-install-gitbash">Install Git for Windows</a></td>
-            </tr>
-            <tr>
-                <td>Windows 10 (#1903 and above)</td>
-                <td><a class="os-switch" data-software="wsl" href="#shell-install-wsl">Install WSL 2</a></td>
-            </tr>
-            <tr>
-                <td>Windows 11 <strong>*</strong></td>
-                <td><a class="os-switch" data-software="wsl" href="#shell-install-wsl">Install WSL 2</a></td>
-            </tr>
-        </table>
-
-        <details>
-            <summary>Help! What should I use?</summary>
-            <div class="alert alert-warning">
-                <p>
-                    <h4 id="shell-windows-check">Checking your Windows Version</h4>
-                    Click on the Windows Start Menu button in the bottom left corner of your screen, or tap the Windows button on your keyboard, and type “System” in the search bar.
-                    Click the “System (Control Panel)” option.
-                    In the window that opens, there will be information about your current Windows system, including the version. Here is an example from Windows 11:
-                    <br/>
-                    <img src="assets/img/windows_spec_example.png" alt="Windows System Info version example">
-                    Depending on your version, please go to the relevant instructions below.
-                </p>
-                <br/>
-                <p>
-                    <h4 id="shell-windows-xp-7-8">Windows XP/Vista/7/8</h4>
-                    <strong>These versions of Windows are considered End Of Life, and are not recommended for use in modern data science.</strong>
-                    Software may experience issues, and security updates are also not available which puts your machine at risk.
-                    Please consider upgrading your Windows version if you are able to do this yourself, or speak with your local IT administrator to discuss options available to you to upgrade.
-                    <br/>
-                    If you are running any of these Windows versions, please install Git for Windows using the <a href="#shell-git">installation instructions</a> below.
-                </p>
-                <br/>
-                <p>
-                    <h4 id="shell-windows-10-1902">Windows 10 (earlier than version #1903)</h4>
-                    For older versions of Windows 10 (version 1903/OS build 18362 and below), please follow the Git for Windows <a href="#shell-git">installation instructions</a> below.
-                </p>
-                <br/>
-                <p>
-                    <h4 id="shell-windows-10-11">Windows 10 (version #1903 and later) and Windows 11</h4>
-                    WSL 2 is recommended for more modern versions of Windows as it provides an accurate and representative experience of Linux, but provided from within your Windows environment.
-                </p>
-            </div>
-        </details>
 
         <ul class="nav nav-tabs" role="tablist" id="win-tabs">
           <li role="presentation" class="active"><a data-software="wsl" href="#shell-install-wsl" aria-controls="shell-wsl" role="tab" data-toggle="tab">WSL 2</a></li>
