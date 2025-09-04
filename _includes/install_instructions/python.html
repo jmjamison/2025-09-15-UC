@@ -38,8 +38,22 @@ https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatib
       <article role="tabpanel" class="tab-pane active" id="python-windows">
           <h4>Starting a Google Colab instance</h4>
 	    <p> Go to <a href="https://colab.google/">Google Colab</a>. You will have to log into your Google Account.  
-                Click on "New Notebook". Once the login is successful, it should launch a Colab instance. 
+                Click on "New Notebook". Once the login is successful, it should launch a Colab instance.
             </p>
+            <p>
+                In order to access your datasets in Colab, you can first upload the "Gapminder_dataset" folder to your Google Drive. 
+                You can then mount the Google Drive on Colab by clicking on the <strong>"Files"</strong> icon on the left, 
+                followed by clicking on <strong>"Mount Drive"</strong> icon.
+            </p>
+            <p>
+                Once you have uploaded your data folder to your google drive and mounted it in Colab, you can go through your directories to get to your 
+                "Gapminder_dataset" folder. You can get to this path for this folder by right clicking on the "Gapminder_dataset" folder --> <strong>copy 
+                path</strong> and set the <code>data_root_dir</code> variable to that path.
+            </p>
+               You can use the following code in Colab to make sure your path to your data is correct:
+            <br>
+               <code>data_root_dir ="/content/drive/MyDrive/carpentry-python/gapminderdataset/"</code> 
+            
       </article>
       <article role="tabpanel" class="tab-pane" id="python-macos">
         <h4>Starting a Google Colab instance</h4>
