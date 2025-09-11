@@ -1,6 +1,5 @@
 <div id="spreadsheets-setup">
   <h3>Spreadsheet Software</h3>
-
   <p>
     To interact with spreadsheets, we can use <a href="https://www.libreoffice.org">LibreOffice</a>, 
     <a href="https://products.office.com/en-us/excel">Microsoft Excel</a>, 
@@ -15,16 +14,10 @@
     It is a free, open source spreadsheet program.
   </p>
 
-  <div>
-    <ul class="nav nav-tabs os-tabs" role="tablist">
-      <li role="presentation" class="active"><a data-os="windows" href="#spreadsheets-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
-      <li role="presentation"><a data-os="macos" href="#spreadsheets-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
-      <li role="presentation"><a data-os="linux" href="#spreadsheets-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux / WSL</a></li>
-    </ul>
-    <div class="tab-content">
-      <article role="tabpanel" class="tab-pane active" id="spreadsheets-windows">
-        <ul>
-         <li><strong>Download the Installer:</strong>
+<h4>Windows</h4>
+<p>
+    <ul>
+      <li><strong>Download the Installer:</strong>
         Install LibreOffice by going to the 
         <a href="https://www.libreoffice.org/download/libreoffice-fresh/">installation page</a>.
         The version for Windows should automatically be selected. 
@@ -33,14 +26,12 @@
         Your download should begin automatically.</li>
       <li><strong>Install LibreOffice:</strong>  
         Once the installer is downloaded, double click on it and it should install.</li>
-        </ul>
+    </ul>
 
-          <p>If you want to do this manually, download <a href="https://www.sqlite.org/2019/sqlite-tools-win32-x86-3270200.zip">sqlite3</a>, make a bin directory in the user's home directory, unzip sqlite3, move it into the bin directory, and then add the bin directory to the path.</p>
-
-      </article>
-      <article role="tabpanel" class="tab-pane" id="spreadsheets-macos">
-        <p>
-        <li><strong>Download the Installer:</strong>
+  <h4>Mac OS</h4>
+  <p>
+    <ul>
+      <li><strong>Download the Installer:</strong>
         Install LibreOffice by going to the 
         <a href="https://www.libreoffice.org/download/libreoffice-fresh/">installation page</a>.
         The version for Mac OS should automatically be selected. 
@@ -50,11 +41,13 @@
       <li><strong>Install LibreOffice:</strong>  
         The file <code>LibreOffice\_X.X.X\_MacOS\_x86-64</code> (whichever version of LibreOffice you have selected) should have been downloaded. 
         Double click on this file, and LibreOffice will be installed.</li>
-        </p>
-      </article>
-      <article role="tabpanel" class="tab-pane" id="spreadsheets-linux">
-        <p>
-         <li><strong>Download the Installer:</strong>
+    </ul>
+  </p>
+
+  <h4>Linux</h4>
+  <p>
+    <ul>
+      <li><strong>Download the Installer:</strong>
         Install LibreOffice by going to the 
         <a href="https://www.libreoffice.org/download/libreoffice-fresh/">installation page</a>.
         The version for Linux should automatically be selected. 
@@ -63,23 +56,55 @@
         Your download should begin automatically.</li>
       <li><strong>Install LibreOffice:</strong>  
         Once the installer is downloaded, double click on it and it should install.</li>
-        </p>
-      </article>
-    </div>
-  </div>
-<!--
- <h3>DB Browser for SQlite</h3>
-   <p> 
-      <a href="https//sqlitebrowser.org/dl"><strong>DB Browser for SQLite</strong></a> is a visual tool to create, edit, and query
-      <strong>SQLite</strong> databases.<strong>SQLite</strong> is included with <strong>DB Browser for SQLite</strong>, so it does not have to be 
-      installed separately.
-      <ul>
-      <li>There are a few options for Windows, but most modern computers can use the <code>Standard installer for 64-bit Windows</code> version.
-          The <code> .zip (no installer)</code> can be run directly from the folder, after extracting the contents of the zip file. 
-          It will not show up in the <code>Start</code> menu.</li> 
-      <li>There are also two options for MacOS. Most people should use the <code>DB Browser for SQLite (Universal)</code> installer.</li> 
-      </ul>
-   <p>
-    Launch <strong>DB Browser for SQLite</strong> to confirm that the installation was successful.
-   --> 
+    </ul>
+  </p>
 
+
+
+<!--
+<div id="shell-setup"> {% comment %} Start of 'shell' section. {% endcomment %}
+  <h3>The Bash Shell</h3>
+  <p>
+    Bash is a commonly-used shell that gives you the power to do simple tasks
+    more quickly. Please find setup instructions in
+    the <a href="https://librarycarpentry.org/lc-shell/index.html#setup">lesson</a>.
+  </p>
+</div>
+
+<div id="openrefine-setup">
+  <h3>OpenRefine</h3>
+  <p>
+    OpenRefine is a tool to clean up and organize messy data. Please find instructions to
+    install it and the data used in the lesson in the
+    <a href="https://librarycarpentry.org/lc-open-refine/">lesson</a>.
+  </p>
+</div>
+
+<div id="git-setup"> {% comment %} Start of 'Git' section. GitHub browser compatibility
+  is given at https://help.github.com/articles/supported-browsers/{% endcomment %}
+  <h3>Git</h3>
+  <p>
+    Git is a version control system that lets you track who made changes
+    to what when and has options for easily updating a shared or public
+    version of your code
+    on <a href="https://github.com/">https://github.com</a>.
+  </p>
+  <p>
+    Follow the instructions on
+    the <a href="https://librarycarpentry.org/lc-git/index.html#setup">lesson</a> to
+    install Git on your system.
+  </p>
+  <p>
+    You will need an account at <a href="https://github.com/">github.com</a>
+    for parts of the Git lesson. Basic GitHub accounts are free. We encourage
+    you to create a GitHub account if you don't have one already.
+    Please consider what personal information you'd like to reveal. For
+    example, you may want to review these
+    <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
+      for keeping your email address private</a> provided at GitHub. You will
+      need a
+    <a href="https://help.github.com/articles/supported-browsers/">supported
+    web browser</a>.
+  </p>
+</div>
+-->
