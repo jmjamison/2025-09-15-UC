@@ -1,73 +1,52 @@
-<div id="spreadsheets-setup">
-  <h3>Spreadsheet Software</h3>
+<div id="sql">
+  <h3>SQLite</h3>
 
   <p>
-    To interact with spreadsheets, we can use <a href="https://www.libreoffice.org">LibreOffice</a>, 
-    <a href="https://products.office.com/en-us/excel">Microsoft Excel</a>, 
-    <a href="https://www.gnumeric.org">Gnumeric</a>, 
-    <a href="https://www.openoffice.org">OpenOffice.org</a>, 
-    or other programs. 
-    Commands may differ a bit between programs, but general ideas for thinking about spreadsheets is the same.
-  </p>
-  <p>
-    For this lesson, if you don't have a spreadsheet program already, 
-    you can use [LibreOffice](https://www.libreoffice.org). 
-    It is a free, open source spreadsheet program.
+    SQL is a specialized programming language used with databases.  We
+    use a database manager calledwindow
+    <a href="https://www.sqlite.org/">SQLite</a> in our lessons.
   </p>
 
   <div>
     <ul class="nav nav-tabs os-tabs" role="tablist">
-      <li role="presentation" class="active"><a data-os="windows" href="#spreadsheets-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
-      <li role="presentation"><a data-os="macos" href="#spreadsheets-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
-      <li role="presentation"><a data-os="linux" href="#spreadsheets-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux / WSL</a></li>
+      <li role="presentation" class="active"><a data-os="windows" href="#sql-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#sql-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#sql-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux / WSL</a></li>
+      <li role="presentation"><a data-os="web" href="#sql-web" aria-controls="Web" role="tab" data-toggle="tab">Web</a></li>
     </ul>
     <div class="tab-content">
-      <article role="tabpanel" class="tab-pane active" id="spreadsheets-windows">
+      <article role="tabpanel" class="tab-pane active" id="sql-windows">
         <ul>
-         <li><strong>Download the Installer:</strong>
-        Install LibreOffice by going to the 
-        <a href="https://www.libreoffice.org/download/libreoffice-fresh/">installation page</a>.
-        The version for Windows should automatically be selected. 
-        Click <strong>Download</strong>. 
-        You will go to a page that asks about a donation, but you don't need to make one. 
-        Your download should begin automatically.</li>
-      <li><strong>Install LibreOffice:</strong>  
-        Once the installer is downloaded, double click on it and it should install.</li>
+          <li>Run "Git Bash" from the Start menu</li>
+          <li>Copy the following <code>curl -fsSL  {{site.url}}{{site.baseurl}}/getsql.sh | bash</code></li>
+          <li>Paste it into the window that Git Bash opened. If you're unsure, ask an instructor for help</li>
+          <li>You should see something like <code>3.27.2 2019-02-25 16:06:06 ...</code></li>
         </ul>
 
           <p>If you want to do this manually, download <a href="https://www.sqlite.org/2019/sqlite-tools-win32-x86-3270200.zip">sqlite3</a>, make a bin directory in the user's home directory, unzip sqlite3, move it into the bin directory, and then add the bin directory to the path.</p>
 
       </article>
-      <article role="tabpanel" class="tab-pane" id="spreadsheets-macos">
+      <article role="tabpanel" class="tab-pane" id="sql-macos">
         <p>
-        <li><strong>Download the Installer:</strong>
-        Install LibreOffice by going to the 
-        <a href="https://www.libreoffice.org/download/libreoffice-fresh/">installation page</a>.
-        The version for Mac OS should automatically be selected. 
-        Click <strong>Download</strong>. 
-        You will go to a page that asks about a donation, but you don't need to make one. 
-        Your download should begin automatically.</li>
-      <li><strong>Install LibreOffice:</strong>  
-        The file <code>LibreOffice\_X.X.X\_MacOS\_x86-64</code> (whichever version of LibreOffice you have selected) should have been downloaded. 
-        Double click on this file, and LibreOffice will be installed.</li>
+          SQLite comes pre-installed on macOS.
         </p>
       </article>
-      <article role="tabpanel" class="tab-pane" id="spreadsheets-linux">
+      <article role="tabpanel" class="tab-pane" id="sql-linux">
         <p>
-         <li><strong>Download the Installer:</strong>
-        Install LibreOffice by going to the 
-        <a href="https://www.libreoffice.org/download/libreoffice-fresh/">installation page</a>.
-        The version for Linux should automatically be selected. 
-        Click <strong>Download</strong>. 
-        You will go to a page that asks about a donation, but you don't need to make one. 
-        Your download should begin automatically.</li>
-      <li><strong>Install LibreOffice:</strong>  
-        Once the installer is downloaded, double click on it and it should install.</li>
+          SQLite comes pre-installed on Linux.
         </p>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="sql-web">
+        <ul>
+          <li>In case of problems: register for an account at <a href="https://www.pythonanywhere.com/">https://www.pythonanywhere.com</a></li>
+          <li>Download <a href="http://swcarpentry.github.io/sql-novice-survey/files/survey.db">survey.db</a></li>
+          <li>Click on files and upload survey.db</li>
+          <li>Click on dashboard and Choose new console <code>bash</code></li>
+        </ul>
       </article>
     </div>
   </div>
-<!--
+
  <h3>DB Browser for SQlite</h3>
    <p> 
       <a href="https//sqlitebrowser.org/dl"><strong>DB Browser for SQLite</strong></a> is a visual tool to create, edit, and query
@@ -76,10 +55,9 @@
       <ul>
       <li>There are a few options for Windows, but most modern computers can use the <code>Standard installer for 64-bit Windows</code> version.
           The <code> .zip (no installer)</code> can be run directly from the folder, after extracting the contents of the zip file. 
-          It will not show up in the <code>Start</code> menu.</li> 
-      <li>There are also two options for MacOS. Most people should use the <code>DB Browser for SQLite (Universal)</code> installer.</li> 
+          It will not show up in the <code>Start</code> menu. 
+      <li>There are also two options for MacOS. Most people should use the <code>DB Browser for SQLite (Universal)</code> installer. 
       </ul>
-   <p>
     Launch <strong>DB Browser for SQLite</strong> to confirm that the installation was successful.
-   --> 
+     
 
